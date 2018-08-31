@@ -8,5 +8,5 @@ app_name = 'blog'
 # URL Patterns for blog app
 urlpatterns = [
     # Entry point : /blog/
-    path('', views.index, name="index"),
+    path('', views.post_list, name="post_list"),
 ]

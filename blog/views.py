@@ -3,6 +3,6 @@ from .models import Post
 
 
 # Create your views here.
-def index(request):
+def post_list(request):
     posts = Post.published.all()
-    return render(request, 'blog/index.html', context={'posts': posts})
+    return render(request, 'blog/post/list.html', context={'posts': posts})
